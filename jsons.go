@@ -54,4 +54,16 @@ func main() {
 	for key,val := range my_data {
 		fmt.Println(key, val)
 	}
+	
+	
+	// simplest way to handle with JSON
+	var test = []byte(`{
+		"name": "kau",
+		"age" : 19
+	}`)
+
+	var x interface{}
+	json.Unmarshal(test, &x)
+	y, _ := x.(map[string]interface{})
+	fmt.Println(y["age"])
 }
