@@ -66,4 +66,12 @@ func main() {
 	json.Unmarshal(test, &x)
 	y, _ := x.(map[string]interface{})
 	fmt.Println(y["age"])
+	
+	
+	// simplest way to JSON marshalling
+	type Person map[string]interface{}
+	me := Person{
+		"myname": "kau",
+		"age":    19,
+	}
 }
