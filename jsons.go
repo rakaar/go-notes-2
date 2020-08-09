@@ -55,6 +55,8 @@ func main() {
 		fmt.Println(key, val)
 	}
 	
+	// https://play.golang.org/p/LgJcJbB3ifU - playground
+	
 	
 	// simplest way to handle with JSON
 	var test = []byte(`{
